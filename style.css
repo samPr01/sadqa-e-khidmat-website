@@ -36,11 +36,11 @@ main {
 
 /* Image (banner) */
 .hero-img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
+  width: 80%;        /* Controls horizontal size */
+  height: auto;      /* Keeps full image ratio */
   margin: 20px auto;
   display: block;
+  border-radius: 10px;
 }
 
 /* Footer */

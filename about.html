@@ -4,10 +4,30 @@
 <meta charset="UTF-8">
 <title>About Us - Sadqa-e-Khidmat Society</title>
 <link rel="stylesheet" href="style.css">
+
+<style>
+.lang-btn {
+  margin: 10px 5px;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+</style>
+
+<script>
+function setLang(lang) {
+  document.getElementById("about-en").style.display =
+    (lang === "en") ? "block" : "none";
+  document.getElementById("about-hi").style.display =
+    (lang === "hi") ? "block" : "none";
+}
+</script>
+
 </head>
+
 <body>
+
 <header>
-  <h1>Sadqa‑e‑Khidmat Samaj Seva Foundation</h1>
+  <h1>Sadqa-e-Khidmat Samaj Seva Foundation</h1>
   <p>Registered Society | Govt. of Madhya Pradesh</p>
   <nav>
     <a href="index.html">Home</a>
@@ -17,12 +37,105 @@
     <a href="contact.html">Contact</a>
   </nav>
 </header>
+
 <main>
-  <h2>About the Society</h2>
-  <p>This society is registered under Madhya Pradesh Society Registration Act, 1973 and operates in District Agar Malwa.</p>
+
+  <h2>About the Society / हमारे बारे में</h2>
+
+  <!-- Language Toggle -->
+  <button class="lang-btn" onclick="setLang('en')">English</button>
+  <button class="lang-btn" onclick="setLang('hi')">हिंदी</button>
+
+  <!-- English Content -->
+  <div id="about-en">
+
+    <p>
+      Sadqa-e-Khidmat Samaj Seva Foundation is a registered society under the
+      Madhya Pradesh Society Registration Act, 1973. The organization operates
+      primarily in District Agar Malwa and works toward social development,
+      public welfare, and community upliftment.
+    </p>
+
+    <p>
+      Our foundation believes that sustainable change begins at the grassroots
+      level. Through awareness programs, welfare initiatives, and development
+      projects, we strive to improve the quality of life for underserved and
+      marginalized communities.
+    </p>
+
+    <h3>Our Core Focus Areas</h3>
+    <ul>
+      <li>Health camps, vaccination drives, blood donation & eye camps</li>
+      <li>Education promotion and skill development programs</li>
+      <li>Social awareness and sanitation campaigns</li>
+      <li>Relief support for economically weaker sections</li>
+      <li>Women empowerment & child welfare initiatives</li>
+      <li>Environmental conservation & tree plantation drives</li>
+      <li>Facilitation of Government welfare schemes</li>
+    </ul>
+
+    <h3>Vision</h3>
+    <p>
+      To build a healthy, educated, and self-reliant society where every
+      individual has access to opportunities and essential resources.
+    </p>
+
+    <h3>Mission</h3>
+    <p>
+      To implement impactful grassroots programs through community
+      participation, institutional collaboration, and sustainable development
+      practices.
+    </p>
+
+  </div>
+
+  <!-- Hindi Content -->
+  <div id="about-hi" style="display:none;">
+
+    <p>
+      सदक़ा-ए-खिदमत समाज सेवा फाउंडेशन, मध्य प्रदेश सोसायटी पंजीयन अधिनियम
+      1973 के अंतर्गत पंजीकृत संस्था है। संस्था मुख्य रूप से जिला आगर मालवा
+      में कार्यरत है तथा सामाजिक विकास, जनकल्याण और सामुदायिक उत्थान के लिए
+      समर्पित है।
+    </p>
+
+    <p>
+      हमारी संस्था का विश्वास है कि स्थायी परिवर्तन जमीनी स्तर से शुरू होता
+      है। जागरूकता कार्यक्रमों, कल्याणकारी पहलों और विकास परियोजनाओं के माध्यम
+      से हम वंचित एवं जरूरतमंद समुदायों के जीवन स्तर को बेहतर बनाने का प्रयास
+      करते हैं।
+    </p>
+
+    <h3>हमारे प्रमुख कार्यक्षेत्र</h3>
+    <ul>
+      <li>स्वास्थ्य शिविर, टीकाकरण, रक्तदान एवं नेत्र शिविर</li>
+      <li>शिक्षा प्रसार एवं कौशल विकास कार्यक्रम</li>
+      <li>सामाजिक जागरूकता एवं स्वच्छता अभियान</li>
+      <li>आर्थिक रूप से कमजोर वर्गों हेतु राहत सहायता</li>
+      <li>महिला सशक्तिकरण एवं बाल कल्याण योजनाएँ</li>
+      <li>पर्यावरण संरक्षण एवं वृक्षारोपण अभियान</li>
+      <li>शासकीय योजनाओं से जोड़ने में सहयोग</li>
+    </ul>
+
+    <h3>दृष्टि</h3>
+    <p>
+      एक स्वस्थ, शिक्षित एवं आत्मनिर्भर समाज का निर्माण करना जहाँ प्रत्येक
+      व्यक्ति को समान अवसर प्राप्त हो।
+    </p>
+
+    <h3>मिशन</h3>
+    <p>
+      सामुदायिक भागीदारी एवं सतत विकास के माध्यम से प्रभावी सामाजिक कार्यक्रम
+      संचालित करना।
+    </p>
+
+  </div>
+
 </main>
+
 <footer>
-  <p>© 2025 Sadqa‑e‑Khidmat Samaj Seva Foundation</p>
+  <p>© 2025 Sadqa-e-Khidmat Samaj Seva Foundation</p>
 </footer>
+
 </body>
 </html>
